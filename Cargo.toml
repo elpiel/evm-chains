@@ -1,0 +1,27 @@
+[package]
+name = "evm_chains"
+version = "0.1.0"
+authors = ["Lachezar Lechev <elpiel93@gmail.com>"]
+edition = "2021"
+description = "A list of Ethereum Virtual Machine (or EVM for short) compatible chains."
+readme = true
+repository = "https://github.com/elpiel/evm-chains"
+license = "MIT OR Apache-2.0"
+
+keywords = ["ethereum", "blockchain", "chain", "evm", "utility"]
+
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+once_cell = "1.9"
+# url = { version = "2", features = ["serde"] }
+
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+
+thiserror = "1.0"
+# [build-dependencies]
+# reqwest = { version = "0.11", features = ["blocking", "json"] }
+# serde = { version = "1" }
+# serde_json = "1"

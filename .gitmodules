@@ -1,0 +1,3 @@
+[submodule "ethereum-list/chains"]
+	path = ethereum-list/chains
+	url = git@github.com:ethereum-lists/chains.git
