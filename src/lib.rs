@@ -38,7 +38,7 @@ static CHAINS: Lazy<HashMap<u64, Chain>> = Lazy::new(|| {
         let chain_id = file_name
             .strip_prefix("eip155-")
             .and_then(|file_name| file_name.strip_suffix(".json"))
-            .expect("Chain file name was in incorrect form, expected: eip-155-CHAIN_ID.json")
+            .expect("Chain file name was in incorrect form, expected: eip155-CHAIN_ID.json")
             .parse::<u64>()
             .expect("Chain id in file name should be a valid `u64`");
 
